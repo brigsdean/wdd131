@@ -1,47 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="student page for WDD 131 - Dynamic Web Fundamentals. Made by McKay Thompson. Contains a little bit about me and will later contain photo galleries.">
-    <meta name="author" content="McKay Thompson">
-    <title>WDD 131 - Dynamic Web Fundamentals - McKay Thompson</title>
-</head>
-<body>
-    <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - McKay Thompson</h1>
-        <nav>
-         <ul>
-            <li href="https://www.linkedin.com/in/mckay-thompson/">Linkedin</li>
-            <li href="https://byui.instructure.com/">I-Learn</li>
-            <li href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/22?lang=eng&id=p2#p2">Scripture</li>
-            <li href="#">Final Project</li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="card">
-            <header> 
-                <h3>About Me</h3>
-            </header>
-        </section>
-        <section class="card">
-            <header>
-                <h3>Web Dev Resources</h3>
-            </header>
-            <ul>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn">MDN Web Docs</a></li>
-                <li><a href="https://html.com/">html.com</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>
-           &copy;<span id="currentyear"></span>
-        </p>
-        <p id="lastModified">  
-        </p>
-    </footer>
-</body>
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Brigs Dean WDD 131 - Dynamic Web Fundamentals Home Page">
+        <meta name="author" content="Brigs Dean">
+        <title>WDD 131 - Dynamic Web Fundamentals - Brigs Dean</title>
+    </head>
+    <body>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Brigs Dean</h1>
+            <nav>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/41?lang=eng&id=p10#p10">Scripture</a>
+            </nav>
+        </header>
+        <div class="grid">
+            <main>
+                <section class="card">
+                    <h2>About Me</h2>
+                    <img src="images/profile.jpg" alt="pic of me" width="150">
+                    <p>my name is Brigs Dean</p>
+                    <div class="state">
+                        <h3>California, United States</h3>
+                        <figure>
+                            <img src="images/californiaflag.png" alt="California Flag" width="300">
+                            <figcaption>State Flag of California</figcaption>
+                        </figure>
+                        <p>Alaska Is the largest US state by size Its also to most northern, western and eastern state.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://picsum.photos/">Lorem Picsum Images</a></li>
+                        <li><a href="https://coolors.co/generate">Color Palette Generator</a></li>
+                        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a></li>
+                        <li><a href="https://imageresizer.com/">Image Resizer</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>©<span id="currentyear"></span> Brigs Dean Alaska</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
 </html>
