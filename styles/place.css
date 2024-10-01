@@ -144,7 +144,7 @@ footer {
 
     .weather-head {
         display: flex;
-        background-color: rgba(36, 163, 53, 0.9);
+        background-color: rgb(255, 182, 18);
         padding-left: 25px;
         margin-left: -21%;
     }
