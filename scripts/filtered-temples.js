@@ -19,12 +19,12 @@ const listFilters = [home, old, news, large, small];
 
 const temples = [
   {
-    templeName: "Anchorage Temple",
-    location: "Achorage Alaska",
-    dedicated: "Jan 9th 1999",
+    templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/anchorage-alaska-temple/anchorage-alaska-temple-47089.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
   },
   {
     templeName: "Manti Utah",
