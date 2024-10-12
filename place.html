@@ -1,96 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alaska</title>
-    <meta name="author" content="Brigs Dean">
-    <meta name="description" content="Country Page | WDD131">
-    <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Alaska</h1>
-    </header>
-    <main>
-        <!-- Hero Image Section -->
-        <div class="hero">
-            <picture>
-                <!-- WebP image for desktop -->
-                <source srcset="images/Alaska-large.webp" media="(min-width: 1000px)">
-                <!-- WebP image for mobile -->
-                <source srcset="images/Alaska.webp" media="(min-width: 500px)">
-                <!-- Fallback image for browsers that do not support WebP -->
-                <img src="images/Alaska.png" alt="Alaska">
-            </picture>
-        </div>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WDD 131 | Dynamic Web Fundamentals | Bruna Araújo</title>
+        <meta name="description" content="Dynamic Web Fundamentals | Place page">
+        <meta name="author" content="Brigs Dean">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Alaska</h1>
+        </header>
 
-
-                <!-- Data Section -->
-        <div class="data">
-            <section class="data-head">
-                <h2>Data</h2> 
-                <!-- Data details -->
-            </section>
-            <div class="weather-list">
-                <div class="first">
-                    <p>Area: </p>
-                    <p>Population: </p>
-                    <p>Capital: </p>
-                    <p>Languages: </p>
-                    <p>Currency: </p>
-                    <p>Time Zone: </p>
-                    <p>Calling Code: </p>
-                    <p>Internet TLD: </p>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/Alaska-large.webp" media="(min-width: 750px)">
+                    <img src="images/Alaska.webp" alt="Alaska" width="400" height="600">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <div class="info">
+                    <label class="label"><strong>Area:</strong></label><span class="value">665,400 sq mi</span>
                 </div>
-                <div class="second">
-                    <p>665,400 sq mi</p>
-                    <p>733,583</p>
-                    <p>Anchorage</p>
-                    <p>English</p>
-                    <p>United States Dollars(USD)</p>
-                    <p>UTC -9 (akst)</p>
-                    <p>+907</p>
-                    <p> AK </p>
+                <div class="info">
+                    <label class="label"><strong>Population:</strong></label><span class="value">733,583</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Capital:</strong></label><span class="value">Anchorage</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Languages:</strong></label><span class="value">English</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Currency:</strong></label><span class="value">United States Dollars(USD)</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Time Zone:</strong></label><span class="value">UTC -9 (akst)</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Calling Code:</strong></label><span class="value">+907</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Internet TLD:</strong></label><span class="value">AK</span>   
                 </div>
             </div>
-        </div>
-
-        <!-- Weather Section -->
-        <div class="weather">
-            <section class="weather-head">
-                <h2>Weather</h2> 
-                <span><img src="images/weather-icon.svg" alt="Weather Icon"></span>
-                <!-- Weather details -->
-            </section>
-            <div class="weather-list">
-                <div class="first">
-                    <p>Temperature:</p>
-                    <p>Conditions:</p>
-                    <p>Wind:</p>
-                    <p>Windchill:</p>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather-icon" width="150">
+                <div class="info">
+                    <label class="label"><strong>Temperature:</strong></label>
+                    <span class="value" id="temperature">30-40 °F</span>
                 </div>
-                <div class="second">
-                    <p>30-40°F</p>
-                    <p>Cloudy</p>
-                    <p>7.42 mphh</p>
-                    <p id="windchill"></p>
+                <div class="info">
+                    <label class="label"><strong>Conditions:</strong></label>
+                    <span class="value">Cloudy</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Wind:</strong></label>
+                    <span class="value" id="windSpeed">7.42 mph</span>
+                </div>
+                <div class="info">
+                    <label class="label"><strong>Wind Chill:</strong></label>
+                    <span class="value" id="windChill">N/A</span>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <!-- Include the current year and last modified date using JavaScript -->
-        <p>
-            &copy; <span id="currentyear"></span> Brigs Dean Alaska
-        </p>
-        <p id="lastModification"></p>
-    </footer>
-</body>
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentYear"></span> Brigs Dean Alaska</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>
