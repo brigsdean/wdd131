@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: rgb(15, 32, 75);
+    background-color: rgba(0, 0, 0, 0.178);
 }
 
 :root {
-    --main-color:rgb(15, 32, 75);
-    --borders-color: white;
+    --main-color:rgb(7, 83, 20);
+    --borders-color: rgb(27, 26, 87);
     --font-size: 18px;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
