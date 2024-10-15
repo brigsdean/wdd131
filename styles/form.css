@@ -1,8 +1,8 @@
 :root {
   --primary-color: grey;
-  --secondary-color: rgb(179, 17, 152);
+  --secondary-color: rgb(47, 179, 17);
   --form-bg: #8080805b;
-  --optional: navy;
+  --optional: rgb(0, 0, 128);
 }
 * {
   padding: 0;
