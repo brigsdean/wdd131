@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brigs Dean WDD 131">
+    <meta name="author" content="Brigs Dean">
+    <title>The Travel Forum - Submit Your Story</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Travel Diaries</h1>
+        <nav>
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="submit.html">Submit Your Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Your Travel Story</h2>
+        <form id="storyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="story">Your Story:</label><br>
+            <textarea id="story" name="story" rows="10" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Travel Diaries. All rights reserved.</p>
+        <p>Aanchorage Alaska &bull; Alaska U.S.A</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
