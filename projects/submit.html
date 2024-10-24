@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brigs Dean WDD 131">
-    <meta name="author" content="Brigs Dean">
-    <title>The Travel Forum - Submit Your Story</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
-    <script src="scripts/getdate.js" defer></script>
-
+    <meta name="author" content="Brigs Dean ">
+    <meta name="description" content="WDD 131- Dynamic Web Fundamentals">
+    <title>Fresh Cleaners - Dry Cleaning Service</title>
+    <link href="images/Designer(1).webp" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <script src="scripts/scripts.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>Travel Diaries</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="tips.html">Travel Tips</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
-                <li><a href="submit.html">Submit Your Story</a></li>
-            </ul>
+        <div class="head-div">
+            <img loading="lazy" src="images/Logo.webp" alt="travel forum Logo" class="logo">
+            <h1>Fresh<span id="head-txt">Cleaners</span></h1>
+        </div>
+        <button id="menu" title="Menu Button"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home-Page" class="active" id="home">Home</a>
+            <a href="destinations.html" title="Service-Page" id="old">destinations</a>
+            <a href="submit.html" title="About-Pafge" id="new">submit</a>
+            <a href="tips.html" title="Contact-Page" id="large">tips</a>
+            <a href="gallery.html" title="Contact-Page" id="large">gallery</a>
         </nav>
     </header>
     <main>
-        <h2>Submit Your Travel Story</h2>
-        <form id="storyForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="story">Your Story:</label><br>
-            <textarea id="story" name="story" rows="10" required></textarea><br><br>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="service-img">
+            <div class="laundry-box">
+                <h1 class="laundry-h1">The Travel Forum</h1>
+                <h2 class="laundry-h2">your forum for sharing travel stories</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="location-div">
+                <i class="fa fa-1x fa-map-marker-alt text-white m-0 mr-3"></i>
+                <h3>Our Location</h3>
+                <br>
+                <h4>123 Street, Anchorage City, USA</h4>
+            </div>
+            <div class="email-div">
+
+                <i class="fa fa-1x fa-envelope"></i>
+                <h3>Email Us</h3>
+                <br>
+                <a href="mailto:abcde1234@gmail.com" style="font-size: 0.75rem;">
+                    <h4>Travelforums@gmail.com</h4>
+                </a>
+            </div>
+            <div class="contact-div">
+                <i class="fa fa-1x fa-address-book"></i>
+                <h3>Contact Us</h3>
+                <br>
+                <h4>+123-456-7890
+                </h4>
+            </div>
+        </div>
+
+
+
+            <h2>Submit your story</h2>
+            <form action="message.html" method="get" class="contact-form">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">MESSAGE</button>
+            </form>
+
     </main>
     <footer>
-        <p>&copy; <span id="current-year"></span> Travel Diaries. All rights reserved.</p>
-        <p>Aanchorage Alaska &bull; Alaska U.S.A</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+        <a class="media-icons" title="twitter" href="www.twitter.com">
+            <i class="fab fa-twitter"></i></a>
+        <a class="media-icons" title="facebook" href="www.facebook.com">
+            <i class="fab fa-facebook-f"></i></a>
+        <a class="media-icons" title="linkedin" href="www.linkedin.com">
+            <i class="fab fa-linkedin-in"></i></a>
+        <a class="media-icons" title="instagram" href="www.instagram.com">
+            <i class="fab fa-instagram"></i></a>
+        <!-- </div> -->
+        <h3>© 2024 The Travel Forum. All rights reserved</h3>
+
     </footer>
 </body>
+
 </html>
