@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="head-div">
-            <img loading="lazy" src="images/Logo.webp" alt="travel forum Logo" class="logo">
+            <img src="images/Logo.webp" alt="travel forum Logo" class="logo">
             <h1>Fresh<span id="head-txt">Cleaners</span></h1>
         </div>
         <button id="menu" title="Menu Button"></button>
@@ -69,6 +69,8 @@
 
             <h2>Submit your story</h2>
             <form action="message.html" method="get" class="contact-form">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="Your Email" required>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Your Message" required></textarea>
                 <button type="submit">MESSAGE</button>
